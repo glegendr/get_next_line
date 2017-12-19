@@ -6,7 +6,7 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/18 20:58:22 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/19 21:28:04 by glegendr         ###   ########.fr       */
+/*   Updated: 2017/12/19 21:42:00 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,19 +58,4 @@ int			get_next_line(const int fd, char **line)
 	if (ret == 0)
 		return (0);
 	return (-1);
-}
-
-int main(int argc, const char *argv[])
-{
-	int fd;
-	char *line;
-	int ret;
-
-	fd = open(argv[1], O_RDONLY);
-	while ((ret = get_next_line(fd, &line)))
-	{
-		printf("%i\t%s\n", ret, line);
-		free(line);
-	}
-	return 0;
 }
