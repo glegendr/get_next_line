@@ -89,7 +89,7 @@ SRC= $(addprefix $(SRCDIR), $(addsuffix .c, $(SRCNAME)))
 
 OBJ= $(addprefix $(OBJDIR), $(addsuffix .o, $(SRCNAME)))
 
-INCDIR= inc/
+INCDIR= includes/
 
 all: $(NAME)
 
