@@ -6,7 +6,7 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/12 17:49:09 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/19 21:09:12 by glegendr         ###   ########.fr       */
+/*   Updated: 2017/12/19 21:53:20 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 # include <stdio.h>
 # include <unistd.h>
 # include <fcntl.h>
-# include "libft.h"
-# include "vector.h"
+# include "libft/inc/libft.h"
+# include "libft/inc/vector.h"
 # define BUFF_SIZE 12
 
 int			get_next_line(const int fd, char **line);
