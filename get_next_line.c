@@ -6,13 +6,13 @@
 /*   By: glegendr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/12/18 20:58:22 by glegendr          #+#    #+#             */
-/*   Updated: 2017/12/19 21:42:00 by glegendr         ###   ########.fr       */
+/*   Updated: 2017/12/20 14:39:51 by glegendr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-int			ft_return_value(t_vec *vec, char **line, int r, int i)
+static int			ft_return_value(t_vec *vec, char **line, int r, int i)
 {
 	t_vec	vec2;
 	void	*pos;
@@ -32,7 +32,7 @@ int			ft_return_value(t_vec *vec, char **line, int r, int i)
 	return (1);
 }
 
-int			get_next_line(const int fd, char **line)
+int					get_next_line(const int fd, char **line)
 {
 	static t_vec	vec;
 	char			s[BUFF_SIZE + 1];
