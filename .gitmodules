@@ -1,3 +1,6 @@
 [submodule "libvec"]
 	path = libvec
 	url = https://github.com/glegendr/libvec.git
+[submodule "libft"]
+	path = libft
+	url = https://github.com/glegendr/libft.git
