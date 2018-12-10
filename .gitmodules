@@ -1,0 +1,3 @@
+[submodule "libvec"]
+	path = libvec
+	url = https://github.com/glegendr/libvec.git
